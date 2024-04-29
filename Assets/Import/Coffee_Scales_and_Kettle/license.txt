@@ -1,0 +1,11 @@
+Model Information:
+* title:	Coffee Scales and Kettle
+* source:	https://sketchfab.com/3d-models/coffee-scales-and-kettle-bbe0c28124c9461e85b56bd289137c47
+* author:	hakangztk (https://sketchfab.com/hakangztk)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Coffee Scales and Kettle" (https://sketchfab.com/3d-models/coffee-scales-and-kettle-bbe0c28124c9461e85b56bd289137c47) by hakangztk (https://sketchfab.com/hakangztk) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
