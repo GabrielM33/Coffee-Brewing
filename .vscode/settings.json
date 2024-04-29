@@ -51,5 +51,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Coffee-Brewing.sln"
+    "dotnet.defaultSolution": "Coffee-Brewing.sln",
+    "dotnet.preferCSharpExtension": true
 }
