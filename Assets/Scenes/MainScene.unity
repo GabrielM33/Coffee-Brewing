@@ -2772,7 +2772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beanPrefab: {fileID: 8007285041051248455, guid: 7104e7c47af66421bb2e6727bb9b8605,
     type: 3}
-  centerPosition: {x: 0, y: 0.4, z: 0}
+  centerPosition: {x: -1, y: 0.4, z: 0.058}
   numberOfBeans: 200
   spawnAreaSize: 0.003
 --- !u!4 &1898948269
@@ -2784,11 +2784,11 @@ Transform:
   m_GameObject: {fileID: 1898948267}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1, y: 0.4, z: 0.058}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2070428256}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1995174375
 GameObject:
@@ -2899,7 +2899,6 @@ Transform:
   - {fileID: 202653116}
   - {fileID: 389439858}
   - {fileID: 1171040567}
-  - {fileID: 1898948269}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &626643654873095390
@@ -3151,6 +3150,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287846997213909133, guid: e90a641b8bfef4667b2bb1ee5e52839e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7578050081417460021, guid: e90a641b8bfef4667b2bb1ee5e52839e,
         type: 3}
@@ -3477,3 +3481,4 @@ SceneRoots:
   - {fileID: 660093341}
   - {fileID: 686877678}
   - {fileID: 3117819333816885483}
+  - {fileID: 1898948269}
