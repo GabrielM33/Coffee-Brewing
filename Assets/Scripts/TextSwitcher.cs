@@ -1,35 +1,30 @@
 using UnityEngine;
-using TMPro;
 
-public class TextSwitcherReverse : MonoBehaviour
+public class TextSwitcherForward : MonoBehaviour
 {
-    public GameObject[] texts;
-    private int _currentIndex = -1;
-
-    void Start()
-    {
-        // Initialize by showing the first text
-        //ShowText(currentIndex);
-    }
+    public TextManager textManager;
+    private Animator _animator;
 
     public void SwitchText()
     {
-        // Decrement the index
-        _currentIndex = (_currentIndex - 1) % texts.Length;
+        // Increment the index
+        textManager.currentIndex = (textManager.currentIndex + 1) % textManager.texts.Length;
 
         // Show the next text
-        ShowText(_currentIndex);
+        ShowText(textManager.currentIndex);
     }
 
     void ShowText(int index)
     {
         // Hide all texts
-        foreach (var text in texts)
+        foreach (var text in textManager.texts)
         {
             text.gameObject.SetActive(false);
         }
 
         // Show the current text
-        texts[index].gameObject.SetActive(true);
+        textManager.texts[index].gameObject.SetActive(true);
+
+        _animator.Play(textManager.animations[index].name);
     }
 }

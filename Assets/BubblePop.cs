@@ -3,6 +3,7 @@ using UnityEngine;
 public class BubblePop : MonoBehaviour
 {
     [SerializeField] private AudioSource popSound;
+    [SerializeField] private GameObject popEffect;
     private void OnTriggerEnter(Collider other)
     {
         // if hand collides with bubble, pop bubble
