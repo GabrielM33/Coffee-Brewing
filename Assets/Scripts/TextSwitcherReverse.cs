@@ -3,8 +3,6 @@ using UnityEngine;
 public class TextSwitcherReverse : MonoBehaviour
 {
     public TextManager textManager;
-    public AnimationClip[] animations;
-    private Animator _animator;
 
     public void SwitchTextBackwards()
     {
@@ -26,6 +24,8 @@ public class TextSwitcherReverse : MonoBehaviour
         // Show the current text
         textManager.texts[index].gameObject.SetActive(true);
 
-        _animator.Play(animations[index].name);
+        // Play the animation for the current step
+        string animationName = textManager.animationNames[index]; // Get the correct animation name
+        textManager.animators[index].Play(animationName);
     }
 }

@@ -3,7 +3,6 @@ using UnityEngine;
 public class TextSwitcherForward : MonoBehaviour
 {
     public TextManager textManager;
-    private Animator _animator;
 
     public void SwitchText()
     {
@@ -25,6 +24,8 @@ public class TextSwitcherForward : MonoBehaviour
         // Show the current text
         textManager.texts[index].gameObject.SetActive(true);
 
-        _animator.Play(textManager.animations[index].name);
+        // Play the animation for the current step
+        string animationName = textManager.animationNames[index]; // Get the correct animation name
+        textManager.animators[index].Play(animationName);
     }
 }
