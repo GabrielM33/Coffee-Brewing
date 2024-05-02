@@ -23,6 +23,7 @@ public class BubblePop : MonoBehaviour
         popSound.Play();
         tools.SetActive(true);
         ui.SetActive(true);
+        workArea.SetActive(true);
         bgm.Play();
 
     }
