@@ -3,6 +3,7 @@ using UnityEngine;
 public class BubblePop : MonoBehaviour
 {
     [SerializeField] private AudioSource popSound;
+    [SerializeField] private AudioSource bgm;
     [SerializeField] private GameObject workArea;
     [SerializeField] private GameObject tools;
     [SerializeField] private GameObject ui;
@@ -20,8 +21,9 @@ public class BubblePop : MonoBehaviour
     {
         gameObject.SetActive(false);
         popSound.Play();
-        workArea.SetActive(true);
         tools.SetActive(true);
         ui.SetActive(true);
+        bgm.Play();
+
     }
 }

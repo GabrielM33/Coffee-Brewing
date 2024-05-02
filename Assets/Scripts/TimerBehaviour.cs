@@ -11,12 +11,13 @@ public class TimerBehaviour : MonoBehaviour
         remainingTime -= Time.deltaTime;
         int minutes = Mathf.FloorToInt(remainingTime / 60f);
         int seconds = Mathf.FloorToInt(remainingTime % 60f);
-        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        timerText.text = $"{minutes:00}:{seconds:00}";
         
         if (remainingTime <= 0)
         {
+            Debug.Log("Timer was called");
             // stop counting
-            timerText.text = "Target Time!";
+            timerText.text = "End";
         }
     }
 }

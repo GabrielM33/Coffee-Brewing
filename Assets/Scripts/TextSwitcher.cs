@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class TextSwitcherForward : MonoBehaviour
+public class TextSwitcher : MonoBehaviour
 {
-    public TextManager textManager;
-    public TimerBehaviour timer;
+    [SerializeField] private TextManager textManager;
+    [SerializeField] private TimerBehaviour timer;
     private bool startTimer = false;
     
     void Update()
@@ -11,6 +11,7 @@ public class TextSwitcherForward : MonoBehaviour
         if (startTimer)
         {
             timer.SetTimer();
+            Debug.Log("Timer was called 2");
         }
     }
     
@@ -41,6 +42,7 @@ public class TextSwitcherForward : MonoBehaviour
         // if index = 14, start the timer
         if (index == 14)
         {
+            Debug.Log("Timer was called 1");
             startTimer = true;
         }
     }

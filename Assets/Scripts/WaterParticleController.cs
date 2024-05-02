@@ -3,13 +3,18 @@ using System.Collections;
 
 public class ParticleController : MonoBehaviour
 {
-    public ParticleSystem particleSystem; // Your Particle System
+    public new ParticleSystem particleSystem; // Your Particle System
 
-    private IEnumerator OnEnable()
+    public void OnEnable()
+    {
+        StartCoroutine((RunWater()));
+    }
+
+    private IEnumerator RunWater()
     {
         particleSystem.Play(); // Play the Particle System
 
-        yield return new WaitForSeconds(10); // Wait for 10 seconds
+        yield return new WaitForSeconds(5); // Wait for 5 seconds
 
         particleSystem.Stop(); // Stop the Particle System
     }
