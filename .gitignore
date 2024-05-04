@@ -73,3 +73,6 @@ crashlytics-build.properties
 Assets/Sketchfab For Unity
 Sketchfab For Unity.meta
 Assets/TextMesh Pro/
+
+/.idea
+/.vscode

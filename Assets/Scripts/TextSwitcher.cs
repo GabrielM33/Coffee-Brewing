@@ -1,35 +1,49 @@
 using UnityEngine;
-using TMPro;
 
-public class TextSwitcherReverse : MonoBehaviour
+public class TextSwitcher : MonoBehaviour
 {
-    public GameObject[] texts;
-    private int _currentIndex = -1;
-
-    void Start()
+    [SerializeField] private TextManager textManager;
+    [SerializeField] private TimerBehaviour timer;
+    private bool startTimer = false;
+    
+    void Update()
     {
-        // Initialize by showing the first text
-        //ShowText(currentIndex);
+        if (startTimer)
+        {
+            timer.SetTimer();
+            Debug.Log("Timer was called 2");
+        }
     }
-
+    
     public void SwitchText()
     {
-        // Decrement the index
-        _currentIndex = (_currentIndex - 1) % texts.Length;
+        // Increment the index
+        textManager.currentIndex = (textManager.currentIndex + 1) % textManager.texts.Length;
 
         // Show the next text
-        ShowText(_currentIndex);
+        ShowText(textManager.currentIndex);
     }
 
     void ShowText(int index)
     {
         // Hide all texts
-        foreach (var text in texts)
+        foreach (var text in textManager.texts)
         {
             text.gameObject.SetActive(false);
         }
 
         // Show the current text
-        texts[index].gameObject.SetActive(true);
+        textManager.texts[index].gameObject.SetActive(true);
+
+        // Play the animation for the current step
+        string animationName = textManager.animationNames[index]; // Get the correct animation name
+        textManager.animators[index].Play(animationName);
+
+        // if index = 14, start the timer
+        if (index == 14)
+        {
+            Debug.Log("Timer was called 1");
+            startTimer = true;
+        }
     }
 }

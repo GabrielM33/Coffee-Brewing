@@ -1,0 +1,11 @@
+Model Information:
+* title:	digi clock
+* source:	https://sketchfab.com/3d-models/digi-clock-9e262c2c0cdf4a6bad090362ee92eef9
+* author:	arsennicghost (https://sketchfab.com/arsennicghost)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "digi clock" (https://sketchfab.com/3d-models/digi-clock-9e262c2c0cdf4a6bad090362ee92eef9) by arsennicghost (https://sketchfab.com/arsennicghost) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
